@@ -19,7 +19,6 @@ body {
   margin: 5rem auto;
   display: flex;
   flex-direction: column;
-  /* Adjust for mobile layout */
   gap: 2rem;
   align-items: center;
 }
@@ -29,16 +28,8 @@ body {
   height: 7rem;
   background-color: #4c00ff;
   border-radius: 8px;
-}
-
-#inputs label {
-  display: block;
-  margin-bottom: 0.25rem;
-  font: inherit;
-  font-weight: bold;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: #5e6c73;
+  transform-origin: center;
+  /* Set the transform origin to the center */
 }
 
 #inputs input {
@@ -49,13 +40,13 @@ body {
   padding: 0.5rem;
   border-radius: 6px;
   width: 100%;
-  /* Make input width 100% for mobile */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
 }
 
-/* Media query for screens smaller than 768px (typical mobile screens) */
+/* Media query for screens smaller than 768px */
 @media only screen and (max-width: 768px) {
   #demo {
     width: 80%;
-    /* Adjust the width for smaller screens */
   }
 }
