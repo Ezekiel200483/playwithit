@@ -15,12 +15,13 @@ body {
 }
 
 #demo {
-  width: 30rem;
-  margin: 5rem auto;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 #box {
@@ -29,7 +30,23 @@ body {
   background-color: #4c00ff;
   border-radius: 8px;
   transform-origin: center;
-  /* Set the transform origin to the center */
+  margin-top: 1rem;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputs label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font: inherit;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #5e6c73;
 }
 
 #inputs input {
@@ -41,8 +58,8 @@ body {
   border-radius: 6px;
   width: 100%;
   box-sizing: border-box;
-  /* Ensure padding and border are included in the width */
 }
+
 
 /* Media query for screens smaller than 768px */
 @media only screen and (max-width: 768px) {

@@ -7,11 +7,15 @@ function App() {
 
   return (
     <div id="demo">
-      <motion.div id="box" animate={{x, y,rotate}} transition={{
-        duration: 0.3,
-        bounce: 0.5,
-        type: 'spring'
-      }}/>
+      <motion.div
+        id="box"
+        animate={{ x, y, rotate }}
+        transition={{
+          duration: 0.3,
+          bounce: 0.5,
+          type: "spring",
+        }}
+      />
 
       <div id="inputs">
         <p>
@@ -19,6 +23,7 @@ function App() {
           <input
             type="number"
             id="x"
+            placeholder="Input any number"
             onChange={(event) => setX(+event.target.value)}
           />
         </p>
@@ -28,6 +33,7 @@ function App() {
           <input
             type="number"
             id="y"
+            placeholder="Input any number"
             onChange={(event) => setY(+event.target.value)}
           />
         </p>
@@ -37,6 +43,7 @@ function App() {
           <input
             type="number"
             id="rotate"
+            placeholder="Input any number"
             onChange={(event) => setRotate(+event.target.value)}
           />
         </p>
